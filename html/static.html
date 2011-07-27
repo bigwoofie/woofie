@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/jquery.ui.all.css">
+<link rel="stylesheet" type='text/css' href="../css/woofie.css">
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script  type="text/javascript" src="../js/jquery-ui-1.8.5.custom.min.js"></script>
+<script  type="text/javascript" src="../js/woofie.js"></script>
+
+<!--  Include domain specific language  -->
+<script type="text/javascript" src="../js/drawing.js"></script>
+
+</head>
+<body>
+<script>
+(function ($) {
+
+
+	function init () {
+		$(".greenblock").draggable();
+	}	
+
+$(document).ready( init);
+}
+)(jQuery);
+
+</script>
+
+<div id ="titlebar">Woofie</div>
+
+	<div id="templatechooser">
+		<div id="templateselector">
+			
+					 	
+		 	<div id="righttemplates">
+		 		<div class="placeholder"></div>
+		 	    <div class="templatebutton"><div class="tblight red"></div><div class="tblabel">Control</div></div>	
+		 	    <div class="templatebutton">Sensing</div>	
+		 	    <div class="templatebutton">Numbers</div>	
+		 	    <div class="templatebutton">Variables</div>	
+		 	    
+			</div>
+		 <div id="lefttemplates">
+				<div class="placeholder"></div>
+				<div class="templatebutton">Motion</div>
+				<div class="templatebutton">Looks</div>
+			    <div class="templatebutton">Sound</div>
+			    <div class="templatebutton">Pen</div>
+			</div>
+		 		
+		</div>
+		<div id="templatelist"></div>
+	</div>
+	<div id ="programmer">
+		<div id="charprops">
+			<div id="charbuttons">
+				<div id="rotate">@</div>
+				<div id="flip">&lt;-&gt;</div>
+				<div id="right">T</div>
+			</div>
+			<div id="charinfo">
+				<div id="charname"><input id="charname" value=""><div id="charlock"></div></div>
+				<div id="chardata">x: -98  y:-60 direction: -54</div>
+			</div>
+			<div id="chartabs"><div id="spritetab">Sprites</div><div id="costumestab">Costumes</div><div id="soundstab">Sounds</div></div>
+		</div>
+		<div id="charprogram">
+			<div id="sss" class="greenblock">move <div id="sss" class="greenblock">move</div>stuff</div>
+			<div id="sss" class="greenblock">move</div>
+			<span id="sss" class="greenblock">move <span id="sss" class="greenblock"><span class="big">move</span></span>stuff</span>
+		</div>
+	
+	</div>
+	<div id="rightside">
+		<div id="editbuttons">
+			<div id="editSelect">Select</div>
+			<div id="editCopy">Copy</div>
+			<div id="editCut">Cut</div>
+			<div id="editStretch">Stretch</div>
+			<div id="editShrink">Shrink</div>
+			<div id="editStop">Stop</div>
+			<div id="editGo">GO</div>
+			
+		</div>
+		<div id="stage"></div>
+		<div id="stagecontrols">
+			<div id="editFullScreen">Full Screen</div>
+			<div id="editPaint">Paint</div>
+			<div id="editNew">New</div>
+			<div id="editSurprise">Surprise</div>
+		
+		</div>
+		<div id="casteditor">
+			<div id="caststage">stage</div>
+			<div id="castlist">
+				<div class="castmember selected">Sprite 1</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+				<div class="castmember">Sprite 2</div>
+			</div>
+		</div>
+	</div>
+
+
+<div id="console"></div>
+
+
+
+
+</body>
+</html>

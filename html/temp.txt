@@ -1,0 +1,78 @@
+<!-- Code Types
+  Control structure
+  Code
+  Hat
+  
+  Paramter types: 
+  Comparison < >
+  Number ( )  type in or drop down
+  Text [ ] type in or drop-down
+  Color swatch.
+  -->
+  
+  <!-- code node has
+  String displayCommand with $1,$2 placeholders
+  String commandCode
+  Code nextCode  (except forever blocks)
+  -->
+  
+  <!-- Control node extends code node has
+  Conditional test Boolean
+  Code trueCode
+  Code elseCode
+  -->
+  
+  <!-- Conditional
+  String displayText
+  String conditionType
+  Number number1
+  Number number2
+  Conditional cond1
+  Conditional cond2
+  
+   -->
+  <!-- Listener hat 
+  String eventText
+  Event event
+  String message
+  Code block
+  -->
+  
+   <!--  
+  Paramter types: 
+  
+  Boolean < >  type in or drop down
+  
+  -->
+  
+   <!--  
+  Paramter types: 
+  
+  Number ( )  type in or drop down
+  
+  -->
+   <!--  
+  Paramter types: 
+  
+  String ( )  type in or drop down
+  
+  -->
+   <!-- Code Types
+    
+  Paramter types: 
+  Comparison < > Boolean
+  
+  -->
+  
+   <!-- Code Types
+  
+  Text [ ] type in or drop-down
+  
+  -->
+  
+  
+   <!-- Code Types
+  
+  Statement
+  
+  -->
