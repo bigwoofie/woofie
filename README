@@ -1,1 +1,4 @@
-A very cool visual programming language modelled after Scratch from MIT, done in a social way.
+Demo for node.js http://tinyclouds.org/node
+
+to run
+$ /usr/local/bin/node server.js

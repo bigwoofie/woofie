@@ -187,15 +187,9 @@ var drawingCatalog= {
 						pen:{id:'pen',name:'Pen',color:"#009999",dataSource:penCatalogAC},
 						variables:{id:'variables',name:'Variables',color:"#99cc99",dataSource:componentCatalogAC}
 		}
+
 }; 
-drawingCatalog.settings = { firstCatalogPage : drawingCatalog.pages.motion,
-														commandTypeImages : commandTypeImages,
-														catalogBackgrounds : catalogBackgrounds,
-														d:d
-};
-
-
-
+drawingCatalog.commandSettings = { firstCatalogPage : drawingCatalog.pages.motion};
 
 
 														  

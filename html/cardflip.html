@@ -1,0 +1,109 @@
+<html>
+<head>
+    <!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+<meta name='apple-mobile-web-app-capable' content='YES'>
+
+<link rel="stylesheet" href="../css/jquery.ui.all.css">
+<link rel="stylesheet" type='text/css' href="../css/woofie.css">
+<script type="text/javascript" src="../js/jquery-1.6.2.js"></script>
+<script  type="text/javascript" src="../js/cardflip.js"></script> 
+
+
+<!--  Include domain specific language  -->
+
+
+</head>
+<body>
+<script>
+
+
+// If you want to prevent dragging, uncomment this section
+
+function preventBehavior(e) 
+{ 
+      e.preventDefault(); 
+};
+
+document.addEventListener("touchmove", preventBehavior, false);
+
+ jQuery(document).ready(function(){
+
+ 	jQuery("#connectcardstage").cardFlip({startRotation: { x: '10deg',y:'10deg',z:'0deg'} , flipRotation : {x:'10deg', y:'190deg', z:'0deg'}});
+
+ });
+
+</script>
+
+	<div id="connect">
+		<div id ="titlebar">SteamWorks</div>
+    <div id="connectcardstage">
+		<div class="card">
+
+    <div class="face">
+    <form id="signin" action="#">
+      <fieldset> 
+
+        <p>
+          This is a cardflip. The source code is
+          <a href="http://github.com/bigwoofie/woofie/tree/master">here</a>.
+        </p>
+				<div class="nicknameentry">		
+
+					<div class="regform"><label for="nick">NickName</label></div>
+					<input  spellcheck="false" class="nicknameentry" id="nickInput" class="text"type="text" name="nick" value=""/><BR>
+					<div class="regform"><label for="nick">Password </label></div>
+					<input  spellcheck="false" class="nicknameentry" id="nickPassword" class="text"type="password" name="nick" value=""/>
+					<input id="connectButton" class="button nicknameentry" type="submit" name="" value="Enter"/>
+
+				</div>
+				<input id="showback" type="button" value="Sign Up" id="registerbutton">
+      </fieldset>
+		</form>
+		</div>
+
+    <div class="back">
+    <form id="register" action="#">
+
+      <fieldset> 
+			Please fill out the following to create an account.<BR>
+				<ul>
+					<li>
+						<div class="regform"><label for="regNickInput">Nickname</label></div>
+						<input spellcheck="false" class="register" id="regNickName" class="text"type="text" name="regNickName" value=""/>
+					</li>
+				  <li>
+						<div class="regform"><label for="regFirstInput">First Name</label></div>
+						<input  spellcheck="false" class="register" id="regFirstName" class="text"type="text" name="regFirstName" value=""/>
+					</li>
+					<li>
+						<div class="regform"><label for="regLastInput">Last Name</label></div>
+						<input  spellcheck="false" class="register" id="regLastName" class="text"type="text" name="regLastName" value=""/>
+					</li>
+					<li>
+						<div class="regform"><label for="regEmailInput">Email</label></div>
+						<input  spellcheck="false" class="register" id="regEmail" class="text"type="text" name="regEmail" value=""/>
+					</li>
+					<li>
+						<div class="regform"><label for="regPasswordInput">Password</label></div>
+						<input  spellcheck="false" class="register" id="regPassword" class="text" type="password" name="regPassword" value=""/>
+					</li>
+					<li>
+						<div class="regform"><label for="regPasswordConfirmInput">Confirm</label></div>
+						<input  spellcheck="false" class="register" id="regPasswordConfirm" type="password"  name="regPasswordConfirm" value=""/>	<input id="signupButton" type="submit" name="" value="Sign Up"/>			
+					</li>
+					<li>
+     				<input id="showface" type="button"  name="" value="Cancel"/>
+					</li>
+
+      </fieldset>
+
+    </form>
+    </div>
+
+		</div>
+		</div>
+
+
+</body>
+</html>

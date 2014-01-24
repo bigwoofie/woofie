@@ -12,7 +12,6 @@
 <script  type="text/javascript" src="../js/client.js"></script>
 <script  type="text/javascript" src="../js/sprite.js"></script> 
 <script  type="text/javascript" src="../js/woofie.js"></script> 
-<script  type="text/javascript" src="../js/cardflip.js"></script> 
 
 
 <!--  Include domain specific language  -->
@@ -131,7 +130,6 @@ document.addEventListener("touchmove", preventBehavior, false);
 <div id="console"></div><div id="chat"><div id="log"></div><input tabindex="1" type="text" id="entry"/></div>
 </td></tr></table>
 </div>
-</div>
 
 <div id="consolebutton">^</div>
   <div style="display:none">
@@ -150,12 +148,13 @@ document.addEventListener("touchmove", preventBehavior, false);
 <img src="i/20101006-texture2variables.png" width=0 height=0>
 <img src="i/20101006-texture2variables2.png" width=0 height=0>
 </div>
-</div>
+
+
+
+
 	<div id="connect">
 		<div id ="titlebar">SteamWorks</div>
-    <div id="connectcardstage">
-		<div class="card">
-    <div class="face">
+    <div id="connectcard">
     <form action="#">
       <fieldset> 
 
@@ -171,11 +170,9 @@ document.addEventListener("touchmove", preventBehavior, false);
 					<input id="connectButton" class="button nicknameentry" type="submit" name="" value="Join"/>
 
 				</div>
-				<div id="showback" class="button register" type="button" value="Sign Up" id="registerbutton">Sign Up</div>
+				<div class="button" id="registerbutton">Sign Up</div>
       </fieldset>
 		</form>
-		</div>
-    <div class="back">
     <form id="register" action="#">
       <fieldset> 
 				<ul><li><div class="regform"><label for="regNickInput">Nickname</label></div>
@@ -195,16 +192,14 @@ document.addEventListener("touchmove", preventBehavior, false);
 					<input class="register" id="regPasswordConfirm" class="password"  name="regPasswordConfirm" value=""/>
 					</li>
 					<li>
-					<input id="signupButton" class="button register" type="submit" name="" value="Sign Up"/>					<input id="showface" class="button register" type="button"  name="" value="Cancel"/>
+					<input id="signupButton" class="button register" type="submit" name="" value="Sign Up"/>					<input id="cancelSignupButton" class="button register" type="button"  name="" value="Cancel"/>
 					</li>
 
       </fieldset>
 
     </form>
-    </div>
 		</div>
-		</div>
-
+  </div>
 	
 
 

@@ -592,7 +592,7 @@ $.widget("ui.mouse", {
 		var self = this;
 
 		this.element
-       .bind('touchstart.'+this.widgetName, function(event) {			                
+         .bind('touchstart.'+this.widgetName, function(event) {			                
                event.stopImmediatePropagation();
                return self._mouseDown(event);
 
@@ -657,28 +657,9 @@ $.widget("ui.mouse", {
 		this._mouseUpDelegate = function(event) {
 			return self._mouseUp(event);
 		};
-
-		// these delegates are required to keep context
-		this._touchMoveDelegate = function(e) {
-				if(e.originalEvent.touches && e.originalEvent.touches.length) {
-						e = e.originalEvent.touches[0];
-				} else if(e.originalEvent.changedTouches && e.originalEvent.changedTouches.length) {
-						e = e.originalEvent.changedTouches[0];
-				}
-			return self._mouseMove(e);
-		};
-		this._touchEndDelegate = function(e) {
-				if(e.originalEvent.touches && e.originalEvent.touches.length) {
-						e = e.originalEvent.touches[0];
-				} else if(e.originalEvent.changedTouches && e.originalEvent.changedTouches.length) {
-						e = e.originalEvent.changedTouches[0];
-				}
-			return self._mouseUp(e);
-		};
-
 		$(document)
-      .bind('touchmove.'+this.widgetName, this._touchMoveDelegate)
-			.bind('touchend.'+this.widgetName, this._touchEndDelegate)
+         .bind('touchmove.'+this.widgetName, alert("move"))//this._mouseMoveDelegate)
+			.bind('touchend.'+this.widgetName, this._mouseUpDelegate)
 			.bind('mousemove.'+this.widgetName, this._mouseMoveDelegate)
 			.bind('mouseup.'+this.widgetName, this._mouseUpDelegate);
 

@@ -1,0 +1,17 @@
+
+										case "move":
+												userMove(message.nick, message.text, message.timestamp);
+												break;
+
+										case "dragBlock":
+												dragBlock(message.nick, message.text, message.timestamp);
+												break;
+
+										case "dropOnCanvas":
+												recvDropOnCanvas(message.nick, message.text, message.timestamp);
+												break;
+												
+										case "newBlock":
+												makeNewBlock(message.nick,message.text, message.timestamp);
+												break;
+												*/
