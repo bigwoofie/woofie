@@ -49,12 +49,13 @@
                 for(var len = prefixes.length; len--;){  
                     if((prefixes[len] + upper) in elem.style){  
                         pref = (prefixes[len]);  
+                        return '-' + pref.toLowerCase() + '-';  
                     }  
                 }  
                 if(prop in elem.style){  
                     pref = (prop);  
+                    return "";
                 }  
-                return '-' + pref.toLowerCase() + '-';  
             },  
             
             
