@@ -37,10 +37,10 @@ var Sprite= function (src){
 
 var Message= function (type, text) {
 		var self=this;
-		this.nick: nick;
-		this.type: type // "msg", "join", "part"
-    this.text: text
-    this.timestamp: (new Date()).getTime()
+		this.nick = nick;
+		this.type= type // "msg", "join", "part"
+    this.text= text
+    this.timestamp= (new Date()).getTime()
 }
 
 

@@ -50,6 +50,7 @@ var nicks = [];
 								loadSprites();
 								resize();
 								fadeIn(); 
+								$('#connectcardstage').cardFlip();
 								return this;
 						});
 				

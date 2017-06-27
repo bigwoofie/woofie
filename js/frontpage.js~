@@ -3,8 +3,6 @@
 
 ( function ($) {
 
-
-								
 		var methods = {
 				init : function( options ) {  
 						return this.each(function() {
@@ -13,12 +11,14 @@
 								}
 
 								card = $(this);
+								front = $('.front',this).show();
+								back  = $('.back',this).hide();
 								}
 				},
 
-				show : function( ) {  },
-				hide : function( ) {  },
-						flip : function( ) { },
+				showlogin : function( ) { $(front).show(); $back.hide()  },
+				showregister : function( ) { $(front).hide(); $back.show() },
+   			flip : function( ) { },
 				update : function( content ) { }
 		};
 
@@ -37,7 +37,6 @@
 				} else {
 						$.error( 'Method ' +  method + ' does not exist on jQuery.tooltip' );
 				}    
-
 								
 		}
 
