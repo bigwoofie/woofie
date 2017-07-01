@@ -105,7 +105,7 @@
         showface: '#showface',
         showback: '#showback',
         startRotation: {x: '0deg',y: '0deg',z:'0deg'},
-        flipRotation: {x: '0deg',y: '10deg',z:'0deg'}
+        flipRotation: {x: '0deg',y: '180deg',z:'0deg'}
     }
     
     $.fn.cardFlip.settings = {}
